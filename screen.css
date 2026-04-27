@@ -32,15 +32,15 @@ body {
   color: var(--gray-900);
 }
 
-/* ── Frame: 3 columns ── */
+/* ── Frame: 2 columns, centered ── */
 .frame {
   width: 1920px;
   height: 1080px;
-  display: grid;
-  grid-template-columns: 320px 1fr 400px;
+  display: flex;
   gap: 24px;
   padding: 56px 60px;
   align-items: start;
+  justify-content: center;
 }
 
 /* ── Card base ── */
@@ -51,7 +51,7 @@ body {
 }
 
 /* ════════════════ LEFT ════════════════ */
-.left-col { display: flex; flex-direction: column; gap: 20px; }
+.left-col { display: flex; flex-direction: column; gap: 20px; width: 320px; flex-shrink: 0; }
 
 /* -- Profile mini card -- */
 .profile-mini { padding: 24px 20px 12px; }
@@ -259,7 +259,7 @@ body {
 .stat-lbl { font-size: 11px; color: var(--gray-500); margin-top: 1px; }
 
 /* ════════════════ MIDDLE ════════════════ */
-.middle-col { display: flex; flex-direction: column; gap: 20px; }
+.middle-col { display: flex; flex-direction: column; gap: 20px; width: 620px; flex-shrink: 0; }
 
 /* -- Profile edit card -- */
 .edit-card { padding: 28px 32px; }
@@ -470,7 +470,7 @@ body {
 .port-sub  { font-size: 10px; color: var(--gray-500); margin-top: 1px; }
 
 /* ════════════════ RIGHT ════════════════ */
-.right-col { display: flex; flex-direction: column; gap: 20px; }
+.right-col { display: flex; flex-direction: column; gap: 20px; width: 360px; flex-shrink: 0; }
 
 /* -- Connections card -- */
 .conn-card { padding: 20px 22px; }
