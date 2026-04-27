@@ -6,44 +6,43 @@
   <title>User Profile</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="profile-screen.css">
+  <link rel="stylesheet" href="screen.css">
 </head>
 <body>
 
 <div class="frame">
 
-  <!-- ══════════════ LEFT COLUMN ══════════════ -->
+  <!-- ══════════════ LEFT ══════════════ -->
   <div class="left-col">
 
     <!-- Profile mini + nav -->
-    <div class="card profile-mini" style="animation-delay:0.05s">
+    <div class="card profile-mini">
 
-      <!-- User info -->
-      <div class="profile-mini-top">
-        <div class="avatar-wrap">
-          <div class="avatar">SR</div>
-          <div class="avatar-edit">
-            <!-- pencil -->
-            <svg viewBox="0 0 10 10" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M1 8l1.5-1.5 5-5 1 1-5 5L1 8z"/><path d="M6.5 2.5l1 1"/>
-            </svg>
+      <div class="profile-top">
+        <!-- Avatar: grey silhouette, no initials -->
+        <div class="avatar">
+          <div class="avatar-edit-dot">
+            <svg viewBox="0 0 8 8"><path d="M1 6.5l1-1 3.5-3.5.7.7-3.5 3.5L1 6.5z"/><path d="M5 2l.7.7"/></svg>
           </div>
         </div>
-        <div class="profile-mini-info">
-          <div class="profile-mini-name">randomUX</div>
-          <div class="profile-mini-email">randomux@gmail.com</div>
-          <div class="profile-mini-badge">
+        <div class="profile-info">
+          <div class="profile-name">randomUX</div>
+          <div class="profile-email">randomux@gmail.com</div>
+          <div class="profile-badges">
             <span class="badge badge-pro">Pro</span>
             <span class="badge badge-open">Open to work</span>
           </div>
         </div>
       </div>
 
-      <!-- Navigation -->
       <ul class="nav-list">
-        <li class="nav-item active">
+
+        <li class="nav-item">
           <div class="nav-icon">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="8" r="4"/>
+              <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+            </svg>
           </div>
           <span class="nav-label">My Profile</span>
           <div class="nav-chevron">
@@ -53,7 +52,10 @@
 
         <li class="nav-item">
           <div class="nav-icon">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+            </svg>
           </div>
           <span class="nav-label">Settings</span>
           <div class="nav-chevron">
@@ -63,38 +65,33 @@
 
         <li class="nav-item">
           <div class="nav-icon">
-            <svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+            </svg>
           </div>
-          <span class="nav-label">Notifications</span>
-          <div class="nav-chevron">
-            <svg viewBox="0 0 16 16"><path d="M6 4l4 4-4 4"/></svg>
-          </div>
+          <span class="nav-label">Notification</span>
         </li>
 
-        <li class="nav-item">
-          <div class="nav-icon">
-            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          </div>
-          <span class="nav-label">Critiques</span>
-          <div class="nav-chevron">
-            <svg viewBox="0 0 16 16"><path d="M6 4l4 4-4 4"/></svg>
-          </div>
-        </li>
-
-        <div class="divider"></div>
+        <div class="nav-divider"></div>
 
         <li class="nav-item logout">
           <div class="nav-icon">
-            <svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+              <polyline points="16 17 21 12 16 7"/>
+              <line x1="21" y1="12" x2="9" y2="12"/>
+            </svg>
           </div>
           <span class="nav-label">Log Out</span>
         </li>
+
       </ul>
     </div>
 
     <!-- Stats -->
-    <div class="card stats-card" style="animation-delay:0.1s">
-      <div class="stats-title">Overview</div>
+    <div class="card stats-card">
+      <div class="card-section-title">Overview</div>
       <div class="stats-grid">
         <div class="stat-box">
           <div class="stat-num">2.4k</div>
@@ -115,26 +112,24 @@
       </div>
     </div>
 
-  </div><!-- /left-col -->
+  </div>
 
-  <!-- ══════════════ MIDDLE COLUMN ══════════════ -->
+  <!-- ══════════════ MIDDLE ══════════════ -->
   <div class="middle-col">
 
-    <!-- Profile edit -->
-    <div class="card profile-edit-card" style="animation-delay:0.12s">
-      <div class="card-header">
-        <div class="card-header-left">
+    <!-- Profile edit card -->
+    <div class="card edit-card">
+      <div class="edit-header">
+        <div class="edit-header-left">
+          <!-- Header avatar: silhouette, no initials -->
           <div class="header-avatar">
-            SR
             <div class="header-edit-dot">
-              <svg viewBox="0 0 10 10" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M1 8l1.5-1.5 5-5 1 1-5 5L1 8z"/><path d="M6.5 2.5l1 1"/>
-              </svg>
+              <svg viewBox="0 0 8 8"><path d="M1 6.5l1-1 3.5-3.5.7.7-3.5 3.5L1 6.5z"/><path d="M5 2l.7.7"/></svg>
             </div>
           </div>
           <div>
-            <div class="header-name">randomUX</div>
-            <div class="header-email">randomux@gmail.com</div>
+            <div class="edit-header-name">randomUX</div>
+            <div class="edit-header-email">randomux@gmail.com</div>
           </div>
         </div>
         <button class="close-btn" aria-label="Close">
@@ -142,7 +137,7 @@
         </button>
       </div>
 
-      <div class="form-fields">
+      <div>
         <div class="field-row">
           <span class="field-label">Name</span>
           <input class="field-input" type="text" value="randomUX" aria-label="Name">
@@ -152,16 +147,16 @@
           <input class="field-input" type="email" value="randomux@gmail.com" aria-label="Email">
         </div>
         <div class="field-row">
-          <span class="field-label">Role</span>
-          <input class="field-input" type="text" value="Lead Product Designer" aria-label="Role">
-        </div>
-        <div class="field-row">
           <span class="field-label">Mobile number</span>
-          <input class="field-input field-value placeholder" type="tel" value="" placeholder="Add number" aria-label="Mobile">
+          <input class="field-input" type="tel" placeholder="Add number" aria-label="Mobile">
         </div>
         <div class="field-row">
           <span class="field-label">Location</span>
-          <input class="field-input" type="text" value="Amsterdam, NL · Remote" aria-label="Location">
+          <input class="field-input" type="text" value="USA" aria-label="Location">
+        </div>
+        <div class="field-row">
+          <span class="field-label">Role</span>
+          <input class="field-input" type="text" value="Lead Product Designer" aria-label="Role">
         </div>
         <div class="field-row">
           <span class="field-label">Company</span>
@@ -169,51 +164,51 @@
         </div>
       </div>
 
-      <button class="save-btn">Save Changes</button>
+      <button class="save-btn">Save Change</button>
     </div>
 
-    <!-- Portfolio strip -->
-    <div class="card portfolio-card" style="animation-delay:0.18s">
-      <div class="section-title">Portfolio highlights</div>
+    <!-- Portfolio -->
+    <div class="card portfolio-card">
+      <div class="card-section-title">Portfolio highlights</div>
       <div class="port-grid">
         <div class="port-thumb">
           <div class="port-img" style="background:linear-gradient(135deg,#1a1a2e,#4a2060)">Patient Portal</div>
           <div class="port-meta">
-            <div class="port-title">Patient Portal Redesign</div>
+            <div class="port-name">Patient Portal Redesign</div>
             <div class="port-sub">Healthtech · Case study</div>
           </div>
         </div>
         <div class="port-thumb">
           <div class="port-img" style="background:linear-gradient(135deg,#0F6E56,#1D9E75)">Design System</div>
           <div class="port-meta">
-            <div class="port-title">Fieldwork DS v2</div>
+            <div class="port-name">Fieldwork DS v2</div>
             <div class="port-sub">340 components</div>
           </div>
         </div>
         <div class="port-thumb">
           <div class="port-img" style="background:linear-gradient(135deg,#993C1D,#D85A30)">Mobile App</div>
           <div class="port-meta">
-            <div class="port-title">Expense Tracker</div>
+            <div class="port-name">Expense Tracker</div>
             <div class="port-sub">Fintech · Mobile</div>
           </div>
         </div>
         <div class="port-thumb">
           <div class="port-img" style="background:linear-gradient(135deg,#185FA5,#378ADD)">Research</div>
           <div class="port-meta">
-            <div class="port-title">Onboarding Study</div>
+            <div class="port-name">Onboarding Study</div>
             <div class="port-sub">24 participants</div>
           </div>
         </div>
       </div>
     </div>
 
-  </div><!-- /middle-col -->
+  </div>
 
-  <!-- ══════════════ RIGHT COLUMN ══════════════ -->
+  <!-- ══════════════ RIGHT ══════════════ -->
   <div class="right-col">
 
-    <!-- Connections / preferences -->
-    <div class="card connections-card" style="animation-delay:0.15s">
+    <!-- Connections -->
+    <div class="card conn-card">
       <div class="conn-header">
         <span class="conn-title">Connections</span>
         <div class="conn-close">
@@ -231,7 +226,7 @@
       <div class="conn-row">
         <span class="conn-label">Language</span>
         <select class="conn-select" aria-label="Language">
-          <option>English</option>
+          <option>Eng</option>
           <option>Dutch</option>
           <option>German</option>
         </select>
@@ -247,8 +242,8 @@
     </div>
 
     <!-- Availability -->
-    <div class="card" style="padding:20px 24px; animation-delay:0.17s">
-      <div class="section-title">Availability</div>
+    <div class="card avail-card">
+      <div class="card-section-title">Availability</div>
       <div class="avail-banner">
         <div>
           <div class="avail-text">Available for work</div>
@@ -258,9 +253,9 @@
       </div>
     </div>
 
-    <!-- Collaboration scores -->
-    <div class="card collab-card" style="animation-delay:0.2s">
-      <div class="section-title">Collaboration scores</div>
+    <!-- Collab scores -->
+    <div class="card collab-card">
+      <div class="card-section-title">Collaboration scores</div>
       <div class="collab-row">
         <span class="collab-label">Responsiveness</span>
         <div class="collab-bar"><div class="collab-fill" style="width:92%;background:#1D9E75"></div></div>
@@ -284,8 +279,8 @@
     </div>
 
     <!-- Endorsements -->
-    <div class="card endorse-card" style="animation-delay:0.22s">
-      <div class="section-title">Endorsements</div>
+    <div class="card endorse-card">
+      <div class="card-section-title">Endorsements</div>
       <div class="endorse-item">
         <div class="end-av" style="background:#185FA5">TK</div>
         <div>
@@ -312,37 +307,34 @@
       </div>
     </div>
 
-    <!-- Recent activity -->
-    <div class="card activity-card" style="animation-delay:0.25s">
-      <div class="section-title">Recent activity</div>
-      <div class="act-list">
-        <div class="act-item">
-          <div class="act-dot" style="background:#534AB7"></div>
-          <div>
-            <div class="act-text">Critiqued <strong>Nav pattern for mobile dashboard</strong></div>
-            <div class="act-time">2 hours ago</div>
-          </div>
+    <!-- Activity -->
+    <div class="card activity-card">
+      <div class="card-section-title">Recent activity</div>
+      <div class="act-item">
+        <div class="act-dot" style="background:#534AB7"></div>
+        <div>
+          <div class="act-text">Critiqued <strong>Nav pattern for mobile dashboard</strong></div>
+          <div class="act-time">2 hours ago</div>
         </div>
-        <div class="act-item">
-          <div class="act-dot" style="background:#1D9E75"></div>
-          <div>
-            <div class="act-text">Published <strong>When to break your own design system</strong></div>
-            <div class="act-time">Yesterday</div>
-          </div>
+      </div>
+      <div class="act-item">
+        <div class="act-dot" style="background:#1D9E75"></div>
+        <div>
+          <div class="act-text">Published <strong>When to break your own design system</strong></div>
+          <div class="act-time">Yesterday</div>
         </div>
-        <div class="act-item">
-          <div class="act-dot" style="background:#D85A30"></div>
-          <div>
-            <div class="act-text">Endorsed <strong>Tomás Krebs</strong> for Systems Thinking</div>
-            <div class="act-time">5 days ago</div>
-          </div>
+      </div>
+      <div class="act-item">
+        <div class="act-dot" style="background:#D85A30"></div>
+        <div>
+          <div class="act-text">Endorsed <strong>Tomás Krebs</strong> for Systems Thinking</div>
+          <div class="act-time">5 days ago</div>
         </div>
       </div>
     </div>
 
-  </div><!-- /right-col -->
+  </div>
 
-</div><!-- /frame -->
-
+</div>
 </body>
 </html>
